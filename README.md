@@ -40,7 +40,7 @@ To use the SSRT shader effectively, consider the following tips:
 ## Addon
 The SSRT addon provides operators to automatically replace Principled BSDF shader nodes with the Principled BSDF SSRT node group in Blender materials.
 
-To use the addon, first install it by following the installation steps. Once installed, you can access it from the `3D Viewport Sidebar` > `Principled BSDF SSRT Replacer panel`.
+To use the addon, first install it by following the [installation steps](https://github.com/PedroPLopes1/SSRT?tab=readme-ov-file#installation). Once installed, you can access it from the `3D Viewport Sidebar` > `Principled BSDF SSRT Replacer panel`.
 
 The addon contains two replacement operators:
 
