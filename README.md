@@ -38,8 +38,18 @@ To use the SSRT shader effectively, consider the following tips:
 - Keep in mind that the SSRT shader relies on screen space data, so objects that are not visible on the screen might not contribute to the lighting and reflections accurately.
 
 ## Addon
+The SSRT addon provides operators to automatically replace Principled BSDF shader nodes with the Principled BSDF SSRT node group in Blender materials.
 
+To use the addon, first install it by following the installation steps. Once installed, you can access it from the `3D Viewport Sidebar` > `Principled BSDF SSRT Replacer panel`.
 
+The addon contains two replacement operators:
+
+|  Operator | Description |
+| --- | --- |
+| `Replace Nodes in Selected Objects` | Replaces Principled BSDF nodes with the SSRT shader in materials of selected objects. |
+| `Replace Nodes in Entire Scene` | Replaces Principled BSDF nodes with the SSRT shader in all materials in the scene. |
+
+This allows existing scenes to be easily converted to use the SSRT shader. The node connections are preserved during replacement.
 
 ## Contributing
 
