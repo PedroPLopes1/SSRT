@@ -58,6 +58,9 @@ Contributions to the SSRT shader and addon are welcome! If you have ideas for im
 ## License
 This project is licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
+# Credits
+The addon script were developed by the talented 3D artist Gabriel Saretti. You can find more of [his work on Instagram](https://www.instagram.com/gabriel.saretti/).
+
 ## Acknowledgments
 Special thanks to the developers and contributors of Blender and the Eevee render engine for providing a powerful and flexible platform for real-time rendering.
 
