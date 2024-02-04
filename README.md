@@ -26,13 +26,13 @@ To use the SSRT shader and addon in Blender, follow these steps:
    - After selecting the `Principled_BSDF_Replacer.py` file, click on the `Install Add-on` button.
 
 6. **Enable Addon:**
-   - Once installed, find and enable the `Principled BSDF SSRT Replacer` addon.
+   - Once installed, find and enable the Principled BSDF SSRT Replacer addon.
 
 ## Usage
 The SSRT shader can be used to create more realistic reflections and lighting in real-time in Blender Eevee. It works by simulating light bouncing using screen space data, which allows for more accurate reflections and lighting than traditional methods.
 
 To use the SSRT shader effectively, consider the following tips:
-- Apply the SSRT shader to the desired objects in your scene by selecting them and assigning the `Principled BSDF SSRT` node group.
+- Apply the SSRT shader to the desired objects in your scene by selecting them and assigning the Principled BSDF SSRT node group.
 - Adjust the shader settings, such as roughness and metallic values, to achieve the desired appearance of your materials.
 - Experiment with different lighting setups and environment maps to enhance the realism of your scene.
 - Keep in mind that the SSRT shader relies on screen space data, so objects that are not visible on the screen might not contribute to the lighting and reflections accurately.
@@ -40,7 +40,7 @@ To use the SSRT shader effectively, consider the following tips:
 ## Addon
 The SSRT addon provides operators to automatically replace Principled BSDF shader nodes with the Principled BSDF SSRT node group in Blender materials.
 
-To use the addon, first install it and append the `Principled BSDF SSRT` node group following the [installation steps](https://github.com/PedroPLopes1/SSRT?tab=readme-ov-file#installation). Once completed, you can access it from the `3D Viewport Sidebar` > `Principled BSDF SSRT Replacer panel`.
+To use the addon, first install it and append the Principled BSDF SSRT node group following the [installation steps](https://github.com/PedroPLopes1/SSRT?tab=readme-ov-file#installation). Once completed, you can access it from the `3D Viewport Sidebar` > `Principled BSDF SSRT Replacer panel`.
 
 The addon contains two replacement operators:
 
@@ -49,7 +49,7 @@ The addon contains two replacement operators:
 | `Replace Nodes in Selected Objects` | Replaces Principled BSDF nodes with the SSRT shader in materials of selected objects. |
 | `Replace Nodes in Entire Scene` | Replaces Principled BSDF nodes with the SSRT shader in all materials in the scene. |
 
-This allows existing scenes to be easily converted to use the SSRT shader. The node connections are preserved during replacement.
+This allows existing scenes to be easily converted to use the SSRT shader. The node connections and values are preserved during replacement.
 
 ## Contributing
 
@@ -58,8 +58,8 @@ Contributions to the SSRT shader and addon are welcome! If you have ideas for im
 ## License
 This project is licensed under the [CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
-# Credits
-The addon script were developed by the talented 3D artist Gabriel Saretti. You can find more of [his work on Instagram](https://www.instagram.com/gabriel.saretti/).
+## Credits
+The addon script were developed by the talented 3D artist Gabriel Saretti. Check out [his work on Instagram](https://www.instagram.com/gabriel.saretti/).
 
 ## Acknowledgments
 Special thanks to the developers and contributors of Blender and the Eevee render engine for providing a powerful and flexible platform for real-time rendering.
