@@ -13,6 +13,10 @@ bl_info = {
 import bpy
 
 def replace_nodes (materials):
+    
+    bpy.context.scene.eevee.ssr_quality = 1
+    bpy.context.scene.eevee.ssr_max_roughness = 1
+    
     for mat in materials:
         if mat.node_tree:
             nodes = mat.node_tree.nodes
@@ -20,7 +24,6 @@ def replace_nodes (materials):
             for principled_node in principled_nodes:
                 new_node = nodes.new ("ShaderNodeGroup")
                 new_node.node_tree = bpy.data.node_groups ["Principled BSDF SSRT"]
-
                 new_node.location = principled_node.location
                 new_node.width = principled_node.width
                 new_node.height = principled_node.height
@@ -64,7 +67,14 @@ class PRINCIPLED_BSDF_SSRT_OT_replace_nodes_scene (bpy.types.Operator):
     bl_options = {'REGISTER', 'UNDO'}
 
     def execute (self, context):
-        replace_nodes (bpy.data.materials)
+        scene_objects = bpy.context.scene.objects
+        scene_materials = []
+        for obj in scene_objects:
+            for slot in obj.material_slots:
+                if slot.material not in scene_materials:
+                    scene_materials.append(slot.material)
+                
+        replace_nodes (scene_materials)
         return {'FINISHED'}
 
 class PRINCIPLED_BSDF_SSRT_PT_panel (bpy.types.Panel):
